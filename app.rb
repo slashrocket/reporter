@@ -5,7 +5,7 @@ get "/" do
   redirect to('https://slashrocket.io')
 end
 
-post "/" do
+post "/report" do
   message_link = params.fetch('text').strip
   token = params.fetch('token').strip
 
